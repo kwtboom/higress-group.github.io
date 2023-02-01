@@ -35,8 +35,14 @@ export default {
             {
                 key: 'download',
                 text: 'DOWNLOAD',
-                link: '/en-us/blog/download.html',
-            }
+                link: 'https://github.com/alibaba/higress/releases',
+            },
+            {
+                key: 'demo',
+                text: 'DEMO',
+                link: 'http://demo.higress.io',
+            },
+          
         ],
         vision: {
             title: 'Vision',
@@ -108,7 +114,12 @@ export default {
             {
                 key: 'download',
                 text: '下载',
-                link: '/zh-cn/blog/download.html',
+                link: 'https://github.com/alibaba/higress/releases',
+            },
+            {
+                key: 'demo',
+                text: '控制台样例',
+                link: 'http://demo.higress.io',
             },
         ],
         vision: {
