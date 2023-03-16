@@ -13,8 +13,8 @@ description: Quick Start.
 #### Helm Installation Command
 
 ```bash
-kubectl create ns higress-system
-helm install higress -n higress-system  oci://higress-registry.cn-hangzhou.cr.aliyuncs.com/charts/higress
+helm repo add higress.io https://higress.io/helm-charts
+helm install higress higress.io/higress -n higress-system --create-namespace
 ```
 
 ### Step 2: Create and test Ingress routes
@@ -115,14 +115,14 @@ kubectl.exe config use-context kind-higress
 ### Step 3: Install Higress
 
 ```bash
-kubectl create ns higress-system
-helm install higress -n higress-system oci://higress-registry.cn-hangzhou.cr.aliyuncs.com/charts/higress-local
+helm repo add higress.io https://higress.io/helm-charts
+helm install higress -n higress-system higress.io/higress-local --create-namespace
 ```
 
 ### Step 4: Create Ingress Resource and Test
 
 ```bash
-kubectl apply -f https://github.com/alibaba/higress/releases/download/v0.6.0/quickstart.yaml
+kubectl apply -f https://github.com/alibaba/higress/releases/download/v0.6.1/quickstart.yaml
 ```
 
 Test Ingress routes:
